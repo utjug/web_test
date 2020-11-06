@@ -1,0 +1,733 @@
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    flex-wrap: wrap;
+
+}
+
+/*Header*/
+
+.header{
+    width: 100%;
+
+    display: block;
+    background-color: #FFFFFF;
+    min-width: 383px;
+
+}
+.inner_header{
+    width:80%;
+    height:100%;
+    display: block;
+    margin: 0 auto;
+
+}
+.logo_container{
+    height:100%;
+    display: table;
+    float: left;
+}
+
+.logo_container h1{
+    font-family: Philosopher;
+    font-size: 72px;
+    line-height: 72px;
+    color:#7B290F;
+
+    transition: font-size .2s linear;
+}
+.logo_container h1:hover{
+    font-size: 74px;
+}
+.navigation{
+    float: right;
+
+    height: 100%;
+}
+.navigation a{
+    height: 100%;
+    display:table;
+    float: left;
+    padding: 0px 20px;
+    margin-top: 10px;
+    margin-bottom: 7px;
+}
+.navigation a li{
+    display: table-cell;
+    vertical-align: middle;
+    height: 100%;
+    color: #7B290F;
+    font-family: Questrial;
+    font-size:48px;
+
+    transition: color .2s linear;
+}
+.navigation a:last-child{
+    padding-right:0;
+}
+.navigation a li:hover{
+    color: #FF4500;
+}
+
+/*Intro*/
+
+.intro{
+    display: table;
+    width: 100%;
+    height: 100vh;
+    background: url("../images/intro.jpg") center no-repeat;
+    background-size: cover;
+    vertical-align: middle;
+}
+.intro_container{
+    padding-left: 50px;
+    height:100%;
+    max-height: 200px;
+    display: table-cell;
+    vertical-align: middle;
+    width: 100%;
+    max-width: 1400px;
+    margin: 0 auto;
+    padding-bottom: 5%;
+}
+
+.intro_straight{
+
+    width: 287px;
+    height: 97px;
+
+    margin-bottom: 15px;
+
+
+    font-family: Questrial;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 48px;
+    line-height: 49px;
+
+    color: #000000;
+}
+
+/*Button*/
+
+.mybutton{
+    display: inline-block;
+    vertical-align: top;
+    padding: 10px 15px;
+    background: #F9CA30;
+    border-radius: 100px;
+
+    font-family: Questrial;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 36px;
+    line-height: 37px;
+
+
+    color: #7B290F;
+
+    transition: background-color .1s linear, color .1s linear;
+}
+.mybutton:hover{
+    background-color:#7B290F;
+    color:#F9CA30
+}
+
+/*AboutUs*/
+
+.about_us{
+
+    display: table;
+    width: 100%;
+    height: 100vh;
+    vertical-align: middle;
+    background: url("../images/2020-04-03 17-31-50.JPG") center no-repeat;
+    background-size: cover;
+}
+
+
+.inner_content{
+    height:100%;
+    max-height: 500px;
+    display: table-cell;
+    vertical-align: middle;
+    width: 100%;
+    max-width: 500px;
+    margin: 0 0;
+
+}
+
+/*.photobg{
+    display: table-cell;
+    padding-left: 2%;
+    height: 85%;
+    width:45%;
+    background: url("../images/aboutus.png") center no-repeat;
+    background-position: right;
+    float: right;
+
+}
+*/
+
+.zagolovok1{
+
+    font-family: Questrial;
+    font-size: 48px;
+    line-height: 68px;
+    color:white;
+    padding-left: 175px;
+}
+.textabout{
+    width:500px;
+    height:300px;
+    padding-left: 30px;
+    font-family: Questrial;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 25px;
+    line-height: 30px;
+    text-align: center;
+    color: white;
+
+}
+
+/*top sellers*/
+
+.vertical{
+
+    padding: 50px 0;
+}
+.tcontainer{
+
+    margin: 0 auto;
+    max-width: 1180px;
+}
+.flextitle{
+    text-align: center;
+    line-height: 100px;
+    font-size: 64px;
+    font-family: Questrial;
+    margin: 0 0 30px 0;
+    color:#7B290F;
+}
+.vertical_body{
+    max-width: 1100px;
+    margin: 0px auto;
+    text-align: center;
+}
+.vertical_row{
+    display: flex;
+    padding: 0 -30px;
+    justify-content: space-around;
+}
+.vertical_column{
+    flex: 0 1 20%;
+    padding: 0 30px;
+    margin-bottom: 20px;
+}
+.vertical_item{
+    border-radius: 5px;
+    max-width: 300px;
+}
+.img3{
+    margin-bottom: 20px;
+    border: 3px solid darkgoldenrod;
+}
+.filler{
+    margin:0 auto;
+    max-width: 1180px;
+    height: 200px;
+    text-align: center;
+    margin-bottom: 5%;
+}
+.img4{
+    animation: rotating 30s infinite linear;
+}
+@keyframes rotating {
+    to { transform: rotate(360deg); }
+}
+
+.yt_block{
+    position: relative;
+    padding-bottom: 420px; /* задаёт высоту контейнера для 16:9 (если 4:3 — поставьте 75%) */
+    height: 0;
+    overflow: hidden;
+    max-width: 560px;
+    margin: 0 auto;
+}
+.yt_block iframe{
+    position: absolute;
+    margin: 0 auto;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-width: 0;
+    outline-width: 0;
+    max-width: 560px;
+    max-height: 315px;
+}
+
+/*Share*/
+
+.share_block{
+    width:100%;
+    height: 250px;
+    background: url("../images/share.png") center no-repeat;
+    background-size: cover;
+    display: table;
+    vertical-align: middle;
+}
+.share_container{
+    height:100%;
+    max-height: 200px;
+    display: table-cell;
+    vertical-align: middle;
+    width: 100%;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+.share_text{
+    padding-right: 30px;
+    float: right;
+
+    height: 150px;
+
+
+
+    font-family: Questrial;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 48px;
+    line-height: 49px;
+
+    color: #000000;
+}
+
+/*Footer*/
+
+.footer{
+    height: 300px;
+    width: 100%;
+    background-color: white;
+
+
+}
+.inner_footer{
+    width:90%;
+    height:100%;
+
+    margin: 0 auto;
+}
+.flex_body{
+    width:100%;
+    height: 200px;
+    margin: 20px auto;
+}
+.footer_row{
+    display: flex;
+    padding: 0 -30px;
+}
+.footer_column1{
+    height:160px;
+    min-width:266px;
+    flex: 0 1 25%;
+    padding: 0 30px;
+    margin-bottom: 20px;
+}
+.footer_column2{
+    height:160px;
+    min-width:104px;
+    flex: 0 1 10%;
+    padding: 0 30px;
+}
+.footer_column3{
+    height:160px;
+    min-width:233px;
+    flex: 0 1 25%;
+    padding: 0 30px;
+}
+.footer_column4{
+    flex: 0 1 15%;
+    height:160px;
+    padding: 0 30px;
+    min-width:100px;
+}
+.intouch{
+    line-height:66px;
+    font-family: Questrial;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 36px;
+
+    color: #7B3613;
+}
+.footer_text{
+    font-family: Questrial;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 29px;
+
+    color: #7B290F;
+
+    transition: color .2s linear;
+}
+.footer_text:hover{
+    color: #FF5500;
+}
+.zagolovokf{
+    font-family: Questrial;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 36px;
+    line-height:66px;
+
+
+    color: #7B290F;
+}
+.footer_filler{
+    margin:0 auto;
+    width: 100%;
+    text-align: center;
+}
+.thank{
+    margin: 0 auto ;
+}
+.i2020{
+    width:100%;
+    max-width: 100%;
+    height: auto;
+}
+
+
+/*BOOTSTRAP*/
+
+.logo_text{
+    font-family: Philosopher;
+    font-size: 72px;
+    line-height: 72px;
+    color:#7B290F;
+}
+.header_text{
+
+    line-height:80px;
+    color: #7B290F;
+    font-family: Questrial;
+    font-size:37px;
+    margin: 0 auto;
+    transition: color .2s linear;
+
+}
+.header_text:hover{
+    color: #FF4500;
+}
+.header_block{
+    display: table-cell;
+    max-width: 200px;
+}
+.row{
+    margin-left: 0px;
+}
+.footer_text_row{
+    min-width: 200px;
+    margin-right: 50px;
+}
+
+@media screen and (min-width:300px) and (max-width: 768px) {
+    .header_text{
+        line-height:50px;
+        font-size:40px;
+        padding: 0px;
+    }
+    .logo_text{
+        line-height: 80px;
+    }
+}
+@media screen and (min-width:354px) and (max-width: 768px){
+    .textabout{
+        font-size: 20px;
+        line-height: 24px;
+        width: 80%;
+    }
+    .zagolovok1{
+        width:240px;
+        margin: 0 auto;
+        font-size: 48px;
+        line-height: 68px;
+        padding: 15px;
+    }
+}
+@media screen and (max-width: 573px) {
+    .header_text{
+        line-height:40px;
+        font-size:25px;
+        padding-left: 30px;
+    }
+    .logo_text{
+        line-height: 60px;
+        font-size: 45px;
+        padding-left: 20%;
+    }
+}
+@media screen and (max-width: 930px) {
+    .about_us{
+        background-size: cover;
+        background: url("../images/mob-about.png") center no-repeat;
+    }
+}
+@media screen and (max-width: 863px) {
+    .textabout{
+        padding: 0;
+        margin: 0 auto;
+    }
+    .zagolovok1{
+        width:240px;
+        margin: 0 auto;
+        font-size: 48px;
+        line-height: 68px;
+        padding: 15px;
+    }
+}
+@media screen and (max-width:354px) {
+    .textabout{
+        padding: 0;
+        margin: 0 auto;
+        font-size: 15px;
+        line-height: 18px;
+        width: 80%;
+    }
+    .intro_straight{
+        font-size: 35px;
+        line-height: 36px;
+        width: 100px;
+        height: 182px;
+    }
+    .flextitle{
+        font-size: 40px;
+        line-height: 60px;
+    }
+    .img3{
+        height: 200px;
+        width:200px;
+    }
+    .zagolovok1{
+
+        width:145px;
+        margin: 0 auto;
+        font-size:27px;
+        line-height: 40px;
+        padding: 15px;
+    }
+    .img4{
+        width: 100px;
+        height: 100px;
+    }
+    .vertical{
+        padding: 0;
+    }
+    .about_us{
+        margin-bottom: 15px;
+    }
+    .filler{
+        height:110px;
+    }
+    .iframe{
+        width: 150px;
+        height: 70px;
+    }
+
+    .share_text{
+        font-size: 33px;
+    }
+    .vertical_column{
+        padding: 0;
+    }
+    .mybutton{
+        font-size: 22px;
+        line-height: 24px;
+    }
+    .intro_container a{
+        margin-left: -19px;
+    }
+    .vertical_item a{
+        font-size: 12px;
+        line-height: 11px;
+        padding: 7px 10px;
+    }
+}
+@media screen and (max-width: 309px){
+    .header_text{
+        padding-left: 0px;
+        padding: 0px;
+    }
+    .share_text{
+        padding-right: 0px;
+    }
+    .logo_text{
+        font-size: 30px;
+    }
+}
+@media screen and (max-width: 230px){
+    .img3{
+        width:120px;
+        height: 120px;
+    }
+    .flextitle{
+        font-size: 20px;
+        line-height: 22px;
+    }
+}
+@media screen and (min-width: 1110px){
+    .logo_text{
+        padding-left: 30px;
+    }
+}
+@media screen and (max-width: 515px){
+    .share_container{
+        max-height: 129px;
+    }
+    .share_text{
+        height: 70px;
+        font-size: 20px;
+        line-height: 23px;
+        margin-bottom: 0;
+        padding-right: 5px;
+    }
+    .share_block{
+        height: 85px;
+        background: url("../images/m_share.png") center no-repeat;
+        background-size: cover;
+    }
+    .yt_block{
+        padding-bottom: 100px;
+        margin-bottom: 30px;
+        margin-right: 40px;
+        margin-left: 40px;
+    }
+}
+@media screen{
+    .share_block{
+        margin-bottom: 20px;
+    }
+}@media screen and (min-width: 1000px) and (max-width: 1500px){
+    .img3{
+        height: 300px;
+        width: 300px;
+    }
+}
+@media screen and (max-width:725px){
+    .footer_text{
+        margin-left: 15px;
+        font-size: 17px;
+        line-height: 20px;
+    }
+    .intouch{
+        margin-left: 15px;
+        font-size: 25px;
+        line-height: 28px;
+    }
+    .zagolovokf{
+        margin-left: 15px;
+        font-size: 25px;
+        line-height: 28px;
+    }
+}
+@media screen{
+    .footer_text{
+        margin-left: 15px;
+    }
+    .intouch{
+        margin-left: 15px;
+    }
+    .zagolovokf{
+        margin-left: 15px;
+    }
+}
+@media screen and (min-width: 1700px) {
+    .logo_text{
+        font-size: 8rem;
+        line-height: 9rem;
+    }
+    .header_text{
+        font-size: 5rem;
+        line-height: 6rem;
+    }
+    .intro_straight {
+        height: 200px;
+        width: 555px;
+        font-size: 5rem;
+        line-height: 6rem;
+    }
+    .intro_container{
+        max-height:400px;
+    }
+    .mybutton{
+        font-size: 50px;
+        line-height: 60px;
+    }
+    .zagolovok1{
+        padding-left: 360px;
+        margin-top: 188px;
+        margin-bottom: 40px;
+        font-size: 80px;
+        line-height: 90px;
+    }
+    .textabout{
+        height: 900px;
+        width:1000px;
+        font-size: 55px;
+        line-height: 59px;
+    }
+    .flextitle{
+        font-size: 100px;
+        line-height: 110px;
+        margin-bottom: 50px;
+    }
+    .img3{
+        height: 500px;
+        width: 500px;
+    }
+    .tcontainer{
+        max-width: 100%;
+    }
+    .vertical_body{
+        max-width: 90%;
+    }
+    .vertical_row{
+        padding: 0 -100px;
+    }
+    .vertical_item{
+        max-width: 500px;
+    }
+    .img4{
+        height:250px;
+        width: 250px;
+    }
+    .share_block{
+        height: 350px;
+    }
+    .share_container{
+        max-height:300px;
+        max-width: 90%;
+    }
+    .share_text{
+        height: 250px;
+        font-size:75px;
+        line-height: 80px;
+    }
+    .intouch{
+        font-size:75px;
+        line-height: 80px;
+    }
+    .zagolovokf{
+        font-size:75px;
+        line-height: 80px;
+    }
+    .footer_text{
+        line-height: 60px;
+        font-size: 55px;
+    }
+}
