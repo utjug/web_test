@@ -40,6 +40,7 @@
 }
 .logo_container h1:hover{
     font-size: 74px;
+    text-decoration: none;
 }
 .navigation{
     float: right;
@@ -69,6 +70,7 @@
 }
 .navigation a li:hover{
     color: #FF4500;
+    text-decoration: none;
 }
 
 /*Intro*/
@@ -132,7 +134,8 @@
 }
 .mybutton:hover{
     background-color:#7B290F;
-    color:#F9CA30
+    color:#F9CA30;
+    text-decoration: none;
 }
 
 /*AboutUs*/
@@ -376,7 +379,8 @@
     transition: color .2s linear;
 }
 .footer_text:hover{
-    color: #FF5500;
+    color: chocolate;
+    text-decoration: none;
 }
 .zagolovokf{
     font-family: Questrial;
@@ -410,6 +414,11 @@
     font-size: 72px;
     line-height: 72px;
     color:#7B290F;
+    transition: color 1s linear;
+}
+.logo_text:hover{
+    color: chocolate;
+    text-decoration: none;
 }
 .header_text{
 
@@ -422,7 +431,8 @@
 
 }
 .header_text:hover{
-    color: #FF4500;
+    color: chocolate;
+    text-decoration: none;
 }
 .header_block{
     display: table-cell;
@@ -471,15 +481,24 @@
         font-size: 45px;
         padding-left: 20%;
     }
+
 }
 @media screen and (max-width: 930px) {
     .about_us{
         background-size: cover;
-        background: url("../images/mob-about.png") center no-repeat;
+        background: url("../images/1112.jpg") center no-repeat;
     }
 }
+@media screen and (max-width: 750px){
+    .intro_container{
+        padding-left: 20px;
+        padding-top: 160px;
+    }
+}
+
 @media screen and (max-width: 863px) {
     .textabout{
+        width: 80%;
         padding: 0;
         margin: 0 auto;
     }
@@ -492,6 +511,10 @@
     }
 }
 @media screen and (max-width:354px) {
+    .about_us{
+        background-size: cover;
+        background: url("../images/11112.png") center no-repeat;
+    }
     .textabout{
         padding: 0;
         margin: 0 auto;
@@ -549,13 +572,14 @@
         font-size: 22px;
         line-height: 24px;
     }
-    .intro_container a{
-        margin-left: -19px;
-    }
     .vertical_item a{
         font-size: 12px;
         line-height: 11px;
         padding: 7px 10px;
+    }
+    .intro_container{
+        padding-left: 20px;
+        padding-top: 160px;
     }
 }
 @media screen and (max-width: 309px){
@@ -633,6 +657,10 @@
         margin-left: 15px;
         font-size: 25px;
         line-height: 28px;
+    }
+    .intro{
+        background: url("../images/intro_mob.png") center no-repeat;
+        background-size: cover;
     }
 }
 @media screen{
@@ -729,5 +757,17 @@
     .footer_text{
         line-height: 60px;
         font-size: 55px;
+    }
+}
+@media screen and (max-width: 655px){
+    .intro_straight{
+        font-size: 35px;
+        line-height: 36px;
+        width: 100px;
+        height: 182px;
+    }
+    .mybutton{
+        font-size: 22px;
+        line-height: 24px;
     }
 }
