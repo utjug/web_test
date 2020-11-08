@@ -428,7 +428,6 @@
     font-size:37px;
     margin: 0 auto;
     transition: color .2s linear;
-
 }
 .header_text:hover{
     color: chocolate;
@@ -437,6 +436,10 @@
 .header_block{
     display: table-cell;
     max-width: 200px;
+    text-align: center;
+}
+.logo_block{
+    text-align: center;
 }
 .row{
     margin-left: 0px;
@@ -474,12 +477,10 @@
     .header_text{
         line-height:40px;
         font-size:25px;
-        padding-left: 30px;
     }
     .logo_text{
         line-height: 60px;
         font-size: 45px;
-        padding-left: 20%;
     }
 
 }
@@ -626,7 +627,7 @@
         background-size: cover;
     }
     .yt_block{
-        padding-bottom: 100px;
+        padding-bottom: 240px;
         margin-bottom: 30px;
         margin-right: 40px;
         margin-left: 40px;
@@ -769,5 +770,30 @@
     .mybutton{
         font-size: 22px;
         line-height: 24px;
+    }
+}
+@media screen and (max-width: 510px){
+    .yt_block{
+        padding-bottom: 200px;
+    }
+}
+@media screen and (max-width: 394px){
+    .yt_block{
+        padding-bottom: 150px;
+    }
+}
+@media screen and (max-width: 345px){
+    .yt_block{
+        padding-bottom: 125px;
+    }
+}
+@media screen and (max-width: 300px){
+    .yt_block{
+        padding-bottom: 110px;
+    }
+}
+@media screen and (max-width: 273px){
+    .yt_block{
+        padding-bottom: 100px;
     }
 }
