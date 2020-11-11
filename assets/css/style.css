@@ -110,6 +110,16 @@
     line-height: 49px;
 
     color: #000000;
+
+    position: relative;
+    animation: showLeft 1s;
+}
+@keyframes showLeft {
+
+    from {left:-100%;}
+
+    to {left:0;}
+
 }
 
 /*Button*/
@@ -137,7 +147,12 @@
     color:#F9CA30;
     text-decoration: none;
 }
-
+.movebtn{
+    width: 500px;
+    height: 40px;
+    position: relative;
+    animation: showLeft 1.5s;
+}
 /*AboutUs*/
 
 .about_us{
