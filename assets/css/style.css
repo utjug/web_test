@@ -148,7 +148,7 @@
     text-decoration: none;
 }
 .movebtn{
-    width: 500px;
+    width: 200px;
     height: 40px;
     position: relative;
     animation: showLeft 1.5s;
